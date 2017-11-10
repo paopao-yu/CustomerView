@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:background="@drawable/bg_bg_top"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <!-- 大号头部 -->
+        <LinearLayout
+            android:id="@+id/top_container_big"
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/shop_info_logo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@android:drawable/sym_def_app_icon" />
+
+            <TextView
+                android:id="@+id/shop_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingTop="10dp"
+                android:text="This is title"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- 小号头部 -->
+        <LinearLayout
+            android:id="@+id/top_container_min"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/shop_info_logo_min"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@android:drawable/sym_def_app_icon" />
+
+            <TextView
+                android:id="@+id/shop_name_tv_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:text="This is title"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- 详细说明 -->
+    <LinearLayout
+        android:id="@+id/middle_container"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginTop="188dp"
+        android:background="#FFEE58"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/shop_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:text="地址呀"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/shop_statistics_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:text="详细说明呀"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!--分割线 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/dot_line_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="269dp"
+        android:background="@drawable/bg_bg_bottom"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+</FrameLayout>
